@@ -1,9 +1,15 @@
-var name = prompt('Wpisz swoje imię');
-alert('Witaj, ' + name);
-console.log('Witaj, ' + name);
-
-var a = prompt('Podaj podstawę a:');
-var h = prompt('Podaj wysokość h:');
-var triangleArea = a*h/2;
-alert('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
-console.log('Pole trójkąta o podstawie a: ' + a + ' i wysokości h: ' + h + ' wynosi: ' + triangleArea);
+var a = prompt('Podaj wartość a:');
+var b = prompt('Podaj wartość b:');
+var value = (a*a)+(2*a*b)-(b*b);
+alert('Wynik równania "(a*a)+(2*a*b)-(b*b)" gdzie a= ' + a + ' ,natomiast b= ' + b + ' wynosi: ' + value);
+console.log('Wynik równania "(a*a)+(2*a*b)-(b*b)" gdzie a= ' + a + ' ,natomiast b= ' + b + ' wynosi: ' + value);
+if (value>0) {
+	alert('Wynik równiania jest większy od 0');
+	console.log('Wynik równiania jest większy od 0');
+} else if (value<0) {
+	alert('Wynik równiania jest mniejszy od 0');
+	console.log('Wynik równiania jest mniejszy od 0');
+} else {
+	alert('Wynik równiania to 0');
+	console.log('Wynik równiania to 0');
+}
